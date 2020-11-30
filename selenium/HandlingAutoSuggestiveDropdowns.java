@@ -30,7 +30,7 @@ public class HandlingAutoSuggestiveDropdowns {
 			}
 		}
 
-		TimeUnit.SECONDS.sleep(20);
+		TimeUnit.SECONDS.sleep(2);
 
 		driver.close();
 
