@@ -7,13 +7,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class HandlingAutoSuggestiveDropdowns {
 	public static void main(String[] args) throws InterruptedException {
 
 		System.setProperty("webdriver.chrome.driver", "/Users/hamzaalicetin/Downloads/chromedriver");
 
+		new FirefoxDriver();
+		
 		WebDriver driver = new ChromeDriver();
+		
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/"); // URL in the browser
 
 		driver.findElement(By.id("autosuggest")).sendKeys("ind");
