@@ -2,11 +2,9 @@ package selenium;
 
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.WebElement;
 import java.util.Iterator;
 
 public class AssingmentWindowHandlingAssignment {
@@ -26,9 +24,8 @@ public class AssingmentWindowHandlingAssignment {
 		// Click "opening new Window 'click here' "
 
 		Set<String> abc = driver.getWindowHandles();
-
 		Iterator<String> it = abc.iterator();
-
+		
 		String parent = it.next();// parent
 		String child = it.next();// child
 		// stiwching to child window
@@ -40,6 +37,7 @@ public class AssingmentWindowHandlingAssignment {
 		driver.switchTo().window(parent);
 		System.out.println(driver.findElement(By.xpath("//*[@id='content']/div/h3")).getText());
 
+				
 		TimeUnit.SECONDS.sleep(2);
 		driver.close();
 
