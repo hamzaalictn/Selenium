@@ -40,7 +40,6 @@ public class AssertationsInAutomationTesting2 {
 		{
 
 			System.out.println("its enabled");
-
 			Assert.assertTrue(true);
 
 		}
